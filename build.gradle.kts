@@ -18,9 +18,7 @@ repositories {
 dependencies {
     annotationProcessor("org.projectlombok:lombok:1.18.24")
 	compileOnly ("org.projectlombok:lombok:1.18.24")
-    annotationProcessor("systems.manifold:manifold-ext:2022.1.12") {
-        because("We want to be able to share easily business rules implementation across different types")
-    }
+    annotationProcessor("systems.manifold:manifold-ext:2022.1.12")
     implementation("systems.manifold:manifold-ext-rt:2022.1.12")
 }
 
