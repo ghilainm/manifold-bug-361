@@ -1,6 +1,4 @@
 plugins {
-    id("org.springframework.boot") version("2.6.7")
-	id("io.spring.dependency-management") version("1.0.11.RELEASE")
 	`java-library`
 }
 
@@ -18,9 +16,8 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-webflux")
-    annotationProcessor("org.projectlombok:lombok")
-	compileOnly ("org.projectlombok:lombok")
+    annotationProcessor("org.projectlombok:lombok:1.18.24")
+	compileOnly ("org.projectlombok:lombok:1.18.24")
     annotationProcessor("systems.manifold:manifold-ext:2022.1.12") {
         because("We want to be able to share easily business rules implementation across different types")
     }
